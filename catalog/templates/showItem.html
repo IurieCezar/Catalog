@@ -1,0 +1,47 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+<div class="row banner cat">
+    <div class="col-md-11 col-md-offset-1 padding-none">
+        <a href="{{ url_for('showCategory',cat_id=category.id) }}">
+            <h1>
+                {{ category.name }}
+            </h1>
+        </a>
+    </div>
+</div>
+
+<div class = 'flash'>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+            {% for message in messages %}
+                <li> <strong> {{ message }} </strong> </li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+</div>
+
+<div class="cat-item">
+    <img src="{{ url_for('uploaded_file', filename=item.image) }}"
+         class="img-responsive pull-right item-image">
+    <h2>
+        {{item.title}}
+    </h2>
+    <h4>
+        Description:
+    </h4>
+    <p>
+        {{item.description}}
+    </p>
+    <a href="{{ url_for('editItem', cat_id = category.id, item_id=item.id) }}">
+        Edit
+    </a>
+    |
+    <a href="{{ url_for('deleteItem', cat_id = category.id, item_id=item.id) }}">
+        Delete
+    </a>
+</div>
+{% endblock %}

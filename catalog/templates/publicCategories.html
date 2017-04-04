@@ -1,0 +1,58 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<div class="row banner main">
+    <div class="col-md-11 padding-none">
+        <h1>
+            SPORTS CATALOG
+        </h1>
+    </div>
+</div>
+
+<div class='flash'>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul>
+        {% for message in messages %}
+            <li> <strong> {{ message }} </strong> </li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    {% endwith %}
+</div>
+<div class="row">
+    <div class="col-xs-6">
+        <h2>CATEGORIES:</h2>
+        {% for category in categories %}
+            <a href = "{{ url_for('showCategory', cat_id=category.id) }}">
+                <div class="catalog-list">
+                    <h3>
+                        {{ category.name }}
+                    </h3>
+                </div>
+            </a>
+        {% endfor %}
+        <hr>
+        <br>
+    </div>
+
+    <div class="col-xs-6">
+        <h2>LATEST ITEMS:</h2>
+        {% for item in items %}
+            {% for category in categories %}
+                {% if item in category.items %}
+                <a href="{{ url_for('showItem', cat_id=category.id, item_id=item.id) }}">
+                    <div class="catalog-list">
+                        <h3>
+                            <b>{{ item.title }}</b>
+                        </h3>
+                        ({{ category.name }})
+                    </div>
+                </a>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
