@@ -13,7 +13,7 @@ Software you need to install:
 
 [VirtualBox](https://www.virtualbox.org/)
 
-Also in order for the oauth system to work replace:
+Also in order for the oauth system to work follow the links below for Google+ and Facebook login to get and replace:
 
 Inside `fb_client_secrets.json`(line 3,4) and `login.html`(line 81):
 
