@@ -39,7 +39,7 @@ Inside `client_secrets.json`(line 1) and `login.html`(line 29):
 
 `vagrant ssh`
 
-5. Navigate to catalog project using CLI
+5. Navigate to `catalog` project using CLI
 
 6. Create the database
 
