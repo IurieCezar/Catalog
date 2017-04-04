@@ -5,12 +5,6 @@ The project also implements JSON endpoints that serve the same information as di
 
 ## Getting Started
 
-1. Install Vagrant and VirtualBox on your machine
-2. Clone the project
-3. Launch the Vagrant VM (vagrant up)
-5. Run your application within the VM (python /catalog/project.py)
-6. Access and test your application by visiting http://localhost:5001 locally
-
 ### Prerequisites
 
 Software you need to install:
@@ -18,6 +12,60 @@ Software you need to install:
 [Vagrant](https://www.vagrantup.com/)
 
 [VirtualBox](https://www.virtualbox.org/)
+
+Also in order for the oauth system to work replace:
+
+Inside `fb_client_secrets.json`:
+
+`FB_APP_ID_GOES_HERE `- with your facebook app id
+
+`FB_APP_SECRET_GOES_HERE`- with your facebook app secret
+
+Inside `client_secrets.json`:
+
+`GOOGLE_CLIENT_ID_GOES_HERE`- with your google client id
+
+`GOOGLE_CLIENT_SECRET_GOES_HERE`- with your google client secret
+
+### Steps you need to take:
+
+1. Install Vagrant and VirtualBox on your machine(use links below)
+2. Clone the project
+3. Launch the Vagrant VM
+
+`vagrant up`
+
+4. SSH into the VM
+
+`vagrant ssh`
+
+5. Navigate to catalog project using CLI
+
+6. Create the database
+
+`python database_setup.py`
+
+7. Populate the database(optional)
+
+`python lotsofitems.py`
+
+8. Run your application within the VM
+
+`python project.py`
+
+9. Access and test your application by visiting http://localhost:5001 locally
+10. JSON Endpoins at (replace [CATEGORY_ID] and [ITEM_ID] with integers):
+ * http://localhost:5001/catalog.JSON  
+ * http://localhost:5001/catalog/category/[CATEGORY_ID].JSON  
+ * http://localhost:5001/catalog/item/[ITEM_ID].JSON
+
+### Ports used:
+
+```
+guest: 8000, host: 8001
+guest: 8080, host: 8081
+guest: 5000, host: 5001
+```
 
 ## Built With
 
