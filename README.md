@@ -29,7 +29,7 @@ Inside `client_secrets.json`:
 
 ### Steps you need to take:
 
-1. Install Vagrant and VirtualBox on your machine(use links below)
+1. Install Vagrant and VirtualBox on your machine
 2. Clone the project
 3. Launch the Vagrant VM
 
