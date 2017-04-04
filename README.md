@@ -15,13 +15,13 @@ Software you need to install:
 
 Also in order for the oauth system to work replace:
 
-Inside `fb_client_secrets.json`:
+Inside `fb_client_secrets.json`(line 3,4) and `login.html`(line 81):
 
 `FB_APP_ID_GOES_HERE `- with your facebook app id
 
 `FB_APP_SECRET_GOES_HERE`- with your facebook app secret
 
-Inside `client_secrets.json`:
+Inside `client_secrets.json`(line 1) and `login.html`(line 29):
 
 `GOOGLE_CLIENT_ID_GOES_HERE`- with your google client id
 
