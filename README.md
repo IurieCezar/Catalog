@@ -1,7 +1,7 @@
 # Catalog
 
 An application that provides a list of items within a variety of categories as well as provide a third-party user authentication and authorization system(Google+ and Facebook). Registered users have the ability to post, edit and delete their own items. 
-The project also implements JSON endpoints that serve the same information as displayed in the HTML endpoints, has CRUD functionality for image handling and CSRF protection on the CRUD operations.
+The project also implements JSON endpoints that serve the same information as displayed in the HTML endpoints, has CRUD functionality for image handling and CSRF protection on the CRUD operations. The web application was successfully deployed to Amazon Web Services.
 
 ## Complete URL:
 
