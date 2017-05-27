@@ -57,11 +57,12 @@ Inside `client_secrets.json`(line 1) and `login.html`(line 29):
 
 `python project.py`
 
-9. Access and test your application by visiting http://localhost:5001 locally
+9. Access and test your application by visiting `http://localhost:5001` locally
 10. JSON Endpoins at (replace [CATEGORY_ID] and [ITEM_ID] with integers):
- * http://localhost:5001/catalog.JSON  
- * http://localhost:5001/catalog/category/[CATEGORY_ID].JSON  
- * http://localhost:5001/catalog/item/[ITEM_ID].JSON
+
+ `* http://localhost:5001/catalog.JSON`  
+ `* http://localhost:5001/catalog/category/[CATEGORY_ID].JSON`  
+ `* http://localhost:5001/catalog/item/[ITEM_ID].JSON`
 
 ### Ports used:
 
