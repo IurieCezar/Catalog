@@ -1,6 +1,6 @@
 # Catalog
 
-An application that provides a list of items within a variety of categories as well as provide a third-party user authentication and authorization system(Google+ and Facebook). Registered users have the ability to post, edit and delete their own items. 
+An application that provides a list of items within a variety of categories as well as provides a third-party user authentication and authorization system (Google+ and Facebook) using OAuth2 framework. Registered users have the ability to post, edit and delete their own items. 
 The project also implements JSON endpoints that serve the same information as displayed in the HTML endpoints, has CRUD functionality for image handling and CSRF protection on the CRUD operations. The web application was successfully deployed to Amazon Web Services.
 
 ## Complete URL
@@ -11,25 +11,25 @@ http://ec2-54-197-202-119.compute-1.amazonaws.com
 
 ### Prerequisites
 
-Software you need to install:
+The software you need to install:
 
 [Vagrant](https://www.vagrantup.com/)
 
 [VirtualBox](https://www.virtualbox.org/)
 
-Also in order for the oauth system to work follow the links below for Google+ and Facebook login to get and replace:
+Also in order for the OAuth system to work follow the links below for Google+ and Facebook login to get and replace:
 
 Inside `fb_client_secrets.json`(line 3,4) and `login.html`(line 81):
 
-`FB_APP_ID_GOES_HERE `- with your facebook app id
+`FB_APP_ID_GOES_HERE `- with your Facebook app id
 
-`FB_APP_SECRET_GOES_HERE`- with your facebook app secret
+`FB_APP_SECRET_GOES_HERE`- with your Facebook app secret
 
 Inside `client_secrets.json`(line 1) and `login.html`(line 29):
 
-`GOOGLE_CLIENT_ID_GOES_HERE`- with your google client id
+`GOOGLE_CLIENT_ID_GOES_HERE`- with your Google client id
 
-`GOOGLE_CLIENT_SECRET_GOES_HERE`- with your google client secret
+`GOOGLE_CLIENT_SECRET_GOES_HERE`- with your Google client secret
 
 ### Steps you need to take:
 
