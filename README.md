@@ -3,6 +3,9 @@
 An application that provides a list of items within a variety of categories as well as provides a third-party user authentication and authorization system (Google+ and Facebook) using OAuth2 framework. Registered users have the ability to post, edit and delete their own items. 
 The project also implements JSON endpoints that serve the same information as displayed in the HTML endpoints, has CRUD functionality for image handling and CSRF protection on the CRUD operations. The web application was successfully deployed to Amazon Web Services.
 
+<img width="1200" alt="catalog" src="https://cloud.githubusercontent.com/assets/19762832/26764969/4c6b742e-4937-11e7-9f36-8f3020eafb52.png">
+
+
 ## Complete URL
 
 http://ec2-54-197-202-119.compute-1.amazonaws.com
