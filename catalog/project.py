@@ -1,6 +1,6 @@
 import os
 
-# Imports on 2 lines to for PEP compliance.
+# Imports on 2 lines for PEP compliance.
 from flask import Flask, render_template, request, redirect, jsonify, url_for
 from flask import flash, send_from_directory
 
