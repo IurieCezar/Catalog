@@ -81,8 +81,8 @@ guest: 5000, host: 5001
 * [SQLite](https://www.sqlite.org/) - SQL database engine
 * [SQLAlchemy](https://www.sqlalchemy.org/) - Object Relational Mapper
 * [Flask](http://flask.pocoo.org/) - Web Framework
-* [Facebook login](https://developers.facebook.com/docs/facebook-login) - Third party authentication and authorization service
-* [Google+ login](https://developers.google.com/+/web/api/rest/oauth) - Third party authentication and authorization service
+* [Facebook login API](https://developers.facebook.com/docs/facebook-login) - Third party authentication and authorization service
+* [Google+ login API](https://developers.google.com/+/web/api/rest/oauth) - Third party authentication and authorization service
 * [Bootstrap](http://getbootstrap.com/) - Front-End Framework
 
 
