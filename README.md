@@ -83,6 +83,7 @@ guest: 5000, host: 5001
 * [Flask](http://flask.pocoo.org/) - Web Framework
 * [Facebook login](https://developers.facebook.com/docs/facebook-login) - Third party authentication and authorization service
 * [Google+ login](https://developers.google.com/+/web/api/rest/oauth) - Third party authentication and authorization service
+* [Bootstrap](http://getbootstrap.com/) - Front-End Framework
 
 
 ## Authors
