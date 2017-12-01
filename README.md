@@ -6,10 +6,6 @@ The project also implements JSON endpoints that serve the same information as di
 <img width="1200" alt="catalog" src="https://cloud.githubusercontent.com/assets/19762832/26764969/4c6b742e-4937-11e7-9f36-8f3020eafb52.png">
 
 
-## Complete URL
-
-http://ec2-54-197-202-119.compute-1.amazonaws.com
-
 ## Getting Started
 
 ### Prerequisites
